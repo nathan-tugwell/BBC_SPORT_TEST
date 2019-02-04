@@ -12,6 +12,11 @@
 		5D2CC9AA21F1F65D00090ADE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CC9A821F1F65D00090ADE /* Main.storyboard */; };
 		5D2CC9AC21F1F65E00090ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CC9AB21F1F65E00090ADE /* Assets.xcassets */; };
 		5D2CC9AF21F1F65E00090ADE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2CC9AD21F1F65E00090ADE /* LaunchScreen.storyboard */; };
+		5D8342BD220828AC006B258B /* SportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8342BC220828AB006B258B /* SportsData.swift */; };
+		5D8342C022082D7C006B258B /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8342BF22082D7C006B258B /* Topic.swift */; };
+		5D8342C222082DE3006B258B /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8342C122082DE3006B258B /* Items.swift */; };
+		5D8342C6220857DD006B258B /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8342C5220857DD006B258B /* CustomTableViewCell.swift */; };
+		5D8E598822045BB8000E8E06 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E598722045BB8000E8E06 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		5D2CC9AB21F1F65E00090ADE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D2CC9AE21F1F65E00090ADE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2CC9B021F1F65E00090ADE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8342BC220828AB006B258B /* SportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsData.swift; sourceTree = "<group>"; };
+		5D8342BF22082D7C006B258B /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		5D8342C122082DE3006B258B /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
+		5D8342C5220857DD006B258B /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		5D8E598722045BB8000E8E06 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,42 @@
 			isa = PBXGroup;
 			children = (
 				5D2CC9A421F1F65D00090ADE /* AppDelegate.swift */,
-				5D2CC9A621F1F65D00090ADE /* ViewController.swift */,
+				5D8342BE22082C69006B258B /* Model */,
+				5D8342C7220857E4006B258B /* View */,
+				5D8342C8220857E8006B258B /* Controller */,
 				5D2CC9A821F1F65D00090ADE /* Main.storyboard */,
 				5D2CC9AB21F1F65E00090ADE /* Assets.xcassets */,
 				5D2CC9AD21F1F65E00090ADE /* LaunchScreen.storyboard */,
 				5D2CC9B021F1F65E00090ADE /* Info.plist */,
 			);
 			path = BBC_SPORT_TEST;
+			sourceTree = "<group>";
+		};
+		5D8342BE22082C69006B258B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5D8E598722045BB8000E8E06 /* Data.swift */,
+				5D8342BC220828AB006B258B /* SportsData.swift */,
+				5D8342BF22082D7C006B258B /* Topic.swift */,
+				5D8342C122082DE3006B258B /* Items.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5D8342C7220857E4006B258B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D8342C5220857DD006B258B /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D8342C8220857E8006B258B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5D2CC9A621F1F65D00090ADE /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8342BD220828AC006B258B /* SportsData.swift in Sources */,
+				5D8342C022082D7C006B258B /* Topic.swift in Sources */,
 				5D2CC9A721F1F65D00090ADE /* ViewController.swift in Sources */,
+				5D8342C6220857DD006B258B /* CustomTableViewCell.swift in Sources */,
+				5D8E598822045BB8000E8E06 /* Data.swift in Sources */,
+				5D8342C222082DE3006B258B /* Items.swift in Sources */,
 				5D2CC9A521F1F65D00090ADE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
